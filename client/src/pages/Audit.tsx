@@ -101,11 +101,11 @@ export default function Audit() {
     <Layout>
       <Section className="pt-24 lg:pt-32">
         <div className="max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight mb-6" data-testid="text-audit-headline">
-            Get a Shopify Conversion Audit
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6" data-testid="text-audit-headline">
+            Book Your <span className="text-gradient">Free Audit</span>
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-audit-subhead">
-            We'll review your store and tell you exactly what's hurting conversion — and what to fix first.
+            We'll review your store and show you exactly where you're losing money — and what to fix first.
           </p>
         </div>
       </Section>

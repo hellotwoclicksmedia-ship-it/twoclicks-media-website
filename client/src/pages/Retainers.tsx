@@ -41,11 +41,11 @@ export default function Retainers() {
     <Layout>
       <Section className="pt-24 lg:pt-32">
         <div className="max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight mb-6" data-testid="text-retainers-headline">
-            High-touch Shopify retainers for serious founders
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6" data-testid="text-retainers-headline">
+            Long-Term <span className="text-gradient">Growth Partners</span>
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8" data-testid="text-retainers-subhead">
-            We act as your fractional Shopify product & CRO team — focused on long-term growth.
+            High-touch retainers for serious DTC founders. We become your fractional Shopify product & CRO team.
           </p>
           <Link href="/contact" data-testid="link-retainers-contact">
             <Button size="lg" data-testid="button-retainers-hero-cta">

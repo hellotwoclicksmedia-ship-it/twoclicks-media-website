@@ -16,7 +16,7 @@ Preferred communication style: Simple, everyday language.
 - **Framework**: React 18 with TypeScript
 - **Routing**: Wouter (lightweight alternative to React Router)
 - **State Management**: TanStack React Query for server state, React Context for theme
-- **Styling**: Tailwind CSS with CSS custom properties for theming (light/dark mode support)
+- **Styling**: Tailwind CSS with CSS custom properties for theming (dark/light mode support)
 - **UI Components**: shadcn/ui component library (Radix UI primitives + Tailwind)
 - **Forms**: React Hook Form with Zod validation
 - **Build Tool**: Vite with custom plugins for Replit integration
@@ -58,12 +58,18 @@ Preferred communication style: Simple, everyday language.
 3. **Component Organization**: Feature-based components in `components/home/`, layout components in `components/layout/`, UI primitives in `components/ui/`
 4. **Static Data**: Case studies, blog articles, and services defined in `client/src/lib/data.ts`
 
-### Brand Design System
-- **Colors**: Primary black (#0B0D10), soft white (#F7F8FA), conversion green (#3EE98A) as accent
-- **Typography**: Inter font family, sentence case for headlines, weight 500-700 for headings
-- **Layout**: max-w-7xl containers, generous vertical rhythm (py-16 to py-24)
-- **Philosophy**: Minimal, calm, premium feel - accent color used sparingly (<8% of page surface)
-- **Dark Mode**: Full support via CSS custom properties and class-based switching
+### Brand Design System (Dark-First)
+- **Theme Default**: Dark mode is default (#0A0A0A background)
+- **Primary Accent**: Conversion green (#3EE98A) used prominently for CTAs, gradient text, data highlights
+- **Typography**: Inter font family, bold weight (700) for headlines with gradient text effect
+- **Layout**: max-w-7xl containers, generous vertical rhythm (py-20 to py-32)
+- **Philosophy**: Bold, dark, data-driven, conversion-obsessed aesthetic
+- **Visual Elements**: Comparison tables, data visualization (bar charts, metrics), numbered process steps
+- **Messaging**: Aggressive, confident copy ("Stop Guessing. Start Scaling.")
+
+### Key CSS Utilities
+- `.text-gradient`: Green-to-white gradient text effect for headlines
+- `.bg-gradient-glow`: Subtle green glow effect for backgrounds
 
 ## External Dependencies
 
@@ -88,10 +94,18 @@ Preferred communication style: Simple, everyday language.
 ## Recent Changes
 
 ### January 8, 2026
+- Major design overhaul: Pivoted from calm/premium to dark-first, bold, data-driven aesthetic
+- Updated default theme to dark mode
+- Added gradient text utilities (.text-gradient, .bg-gradient-glow) in index.css
+- Redesigned all 11 homepage sections with new design language
+- Updated all page headers with gradient text and bold messaging
+- Added partner logos section to hero
+- Implemented comparison table in Philosophy section
+- Added data visualization (bar charts, metrics displays) throughout
+- Updated CTAs to "Book Free Audit" for consistency
+- Updated design_guidelines.md to reflect new design language
 - Initial build of complete TwoClicks Media website
 - Implemented all 12 pages with responsive design
 - Created theme provider with dark/light mode toggle
 - Set up form handling with React Hook Form and Zod validation
 - Implemented API endpoints for audit and contact form submissions
-- Applied brand design system with conversion green accent
-- Added comprehensive data-testid attributes for testing

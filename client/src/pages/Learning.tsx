@@ -33,11 +33,11 @@ export default function Learning() {
     <Layout>
       <Section className="pt-24 lg:pt-32">
         <div className="max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight mb-6" data-testid="text-learning-headline">
-            Learn how high-converting Shopify stores are built
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6" data-testid="text-learning-headline">
+            Learn From <span className="text-gradient">Our Playbook</span>
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-learning-subhead">
-            Frameworks, CRO insights, and practical advice we use with our clients.
+            The same frameworks, CRO insights, and strategies we use with our clients — shared openly.
           </p>
         </div>
       </Section>
@@ -99,7 +99,7 @@ export default function Learning() {
           </p>
           <Link href="/audit" data-testid="link-learning-audit">
             <Button size="lg" data-testid="button-learning-cta">
-              Get a Shopify Conversion Audit
+              Book Free Audit
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>

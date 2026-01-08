@@ -24,15 +24,15 @@ export default function Services() {
     <Layout>
       <Section className="pt-24 lg:pt-32">
         <div className="max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight mb-6" data-testid="text-services-headline">
-            Shopify services built around conversion and ownership
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6" data-testid="text-services-headline">
+            Outcome-Led <span className="text-gradient">Services</span>
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8" data-testid="text-services-subhead">
-            We don't sell tasks. We take responsibility for improving your store's performance over time.
+            We don't sell tasks. We sell measurable outcomes for your Shopify store.
           </p>
           <Link href="/audit" data-testid="link-services-audit">
             <Button size="lg" data-testid="button-services-hero-cta">
-              Get a Shopify Conversion Audit
+              Book Free Audit
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>

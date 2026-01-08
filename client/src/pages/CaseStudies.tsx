@@ -17,11 +17,11 @@ export default function CaseStudies() {
     <Layout>
       <Section className="pt-24 lg:pt-32">
         <div className="max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight mb-6" data-testid="text-case-studies-headline">
-            Real Shopify results, explained clearly
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6" data-testid="text-case-studies-headline">
+            Numbers <span className="text-gradient">Don't Lie</span>
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-case-studies-subhead">
-            Before/after breakdowns, metrics, and decisions — not just screenshots.
+            Before/after breakdowns, real metrics, and strategic decisions — not just screenshots.
           </p>
         </div>
       </Section>
@@ -62,7 +62,7 @@ export default function CaseStudies() {
           </p>
           <Link href="/audit" data-testid="link-case-studies-audit">
             <Button size="lg" data-testid="button-case-studies-cta">
-              Get a Shopify Conversion Audit
+              Book Free Audit
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>

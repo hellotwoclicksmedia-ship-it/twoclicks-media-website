@@ -44,11 +44,11 @@ export default function About() {
     <Layout>
       <Section className="pt-24 lg:pt-32">
         <div className="max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight mb-6" data-testid="text-about-headline">
-            Built around ownership, not deliverables
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6" data-testid="text-about-headline">
+            We Think Like <span className="text-gradient">Owners</span>
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-about-subhead">
-            We're a small, focused team that partners with DTC founders to improve their Shopify stores through conversion-first thinking and long-term ownership.
+            A small, focused team that partners with DTC founders to drive real conversion growth through ownership, not deliverables.
           </p>
         </div>
       </Section>
@@ -116,7 +116,7 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/audit" data-testid="link-about-audit">
               <Button size="lg" data-testid="button-about-audit">
-                Get a Shopify Conversion Audit
+                Book Free Audit
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>

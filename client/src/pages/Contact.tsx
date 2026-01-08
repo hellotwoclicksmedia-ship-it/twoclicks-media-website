@@ -67,11 +67,11 @@ export default function Contact() {
     <Layout>
       <Section className="pt-24 lg:pt-32">
         <div className="max-w-3xl">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight mb-6" data-testid="text-contact-headline">
-            Tell us about your store
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6" data-testid="text-contact-headline">
+            Let's <span className="text-gradient">Connect</span>
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-contact-subhead">
-            If it's a good fit, we'll tell you honestly.
+            Tell us about your store. If we're a good fit, we'll tell you honestly.
           </p>
         </div>
       </Section>
