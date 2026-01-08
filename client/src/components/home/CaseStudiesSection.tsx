@@ -1,40 +1,65 @@
 import { Link } from "wouter";
 import { Section, SectionHeader } from "@/components/ui/section";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { caseStudies } from "@/lib/data";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, TrendingUp } from "lucide-react";
+
+const caseStudyHighlight = {
+  headline: "From 1.2% to 3.5% Conversion Rate in 90 Days",
+  description: "We've helped a Shopify pet and baby store over the course of 90 days to get their conversion rate from 1.2% to 3.5% through our proven CRO process.",
+  stats: [
+    { value: "+192%", label: "Conversion" },
+    { value: "+65%", label: "AOV" },
+    { value: "90", label: "Days" }
+  ]
+};
 
 export function CaseStudiesSection() {
   return (
-    <Section>
+    <Section variant="card">
       <SectionHeader
-        title="Proven results, not promises"
+        title="Numbers Don't Lie"
         centered
       />
       
-      <div className="grid md:grid-cols-2 gap-6">
-        {caseStudies.slice(0, 2).map((study) => (
-          <Card key={study.id} className="hover-elevate" data-testid={`card-case-study-${study.id}`}>
-            <CardHeader>
-              <div className="text-primary text-sm font-medium mb-2">
-                {study.primaryMetric}
+      <div className="max-w-4xl mx-auto">
+        <Card className="bg-background overflow-visible" data-testid="card-case-study-featured">
+          <CardContent className="p-8 lg:p-12">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div>
+                <div className="flex items-center gap-2 text-primary text-sm font-medium mb-4">
+                  <TrendingUp className="h-4 w-4" />
+                  <span>Featured Case Study</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold mb-4" data-testid="text-case-study-headline">
+                  {caseStudyHighlight.headline}
+                </h3>
+                <p className="text-muted-foreground mb-6" data-testid="text-case-study-description">
+                  {caseStudyHighlight.description}
+                </p>
+                <Link href="/case-studies" data-testid="link-case-study-featured">
+                  <Button>
+                    View Full Case Study
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
-              <CardTitle className="text-xl">{study.title}</CardTitle>
-              <CardDescription className="leading-relaxed">
-                {study.description}
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Link href={`/case-studies/${study.slug}`}>
-                <Button variant="ghost" className="px-0" data-testid={`link-case-study-${study.id}`}>
-                  View case study
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-            </CardContent>
-          </Card>
-        ))}
+
+              <div className="grid grid-cols-3 gap-4">
+                {caseStudyHighlight.stats.map((stat, index) => (
+                  <div 
+                    key={index}
+                    className="text-center p-4 bg-card rounded-lg border border-border"
+                    data-testid={`stat-case-study-${index}`}
+                  >
+                    <p className="text-2xl sm:text-3xl font-bold text-primary">{stat.value}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
       <p className="mt-8 text-sm text-muted-foreground text-center" data-testid="text-case-studies-micro">

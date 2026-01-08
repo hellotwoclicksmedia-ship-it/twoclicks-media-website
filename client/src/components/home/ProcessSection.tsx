@@ -2,43 +2,43 @@ import { Section, SectionHeader } from "@/components/ui/section";
 
 const steps = [
   {
-    number: "01",
-    title: "Audit",
-    description: "We deeply review your store, data, speed, UX, and conversion flow."
+    number: 1,
+    title: "Audit & Diagnose",
+    description: "We deeply analyze your store, data, speed, UX, and conversion funnel to find the real problems."
   },
   {
-    number: "02",
-    title: "Prioritise",
-    description: "We identify what will move revenue first — not what looks nice."
+    number: 2,
+    title: "Strategy Map",
+    description: "We create a prioritized roadmap focused on what will move revenue first, not what looks nice."
   },
   {
-    number: "03",
-    title: "Execute & Test",
-    description: "We implement changes, run CRO experiments, and optimise continuously."
+    number: 3,
+    title: "Execute & Build",
+    description: "We implement changes, run CRO experiments, and optimize continuously with fast turnaround."
   },
   {
-    number: "04",
-    title: "Scale",
-    description: "What works gets doubled down. What doesn't gets removed."
+    number: 4,
+    title: "Scale & Iterate",
+    description: "What works gets doubled down. What doesn't gets removed. We keep optimizing month over month."
   }
 ];
 
 export function ProcessSection() {
   return (
-    <Section variant="card">
+    <Section>
       <SectionHeader
-        title="A simple, owner-level process"
+        title="The 4-Step Growth Sprint"
         centered
       />
       
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {steps.map((step, index) => (
           <div 
             key={step.number} 
-            className="relative"
+            className="relative bg-card rounded-lg border border-border p-6"
             data-testid={`process-step-${index}`}
           >
-            <div className="text-5xl font-bold text-primary/20 mb-4">
+            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold mb-4">
               {step.number}
             </div>
             <h3 className="text-lg font-semibold mb-2">{step.title}</h3>

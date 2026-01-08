@@ -11,19 +11,16 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 function getStoredTheme(): Theme {
-  if (typeof window === "undefined") return "light";
+  if (typeof window === "undefined") return "dark";
   try {
     const stored = localStorage.getItem("theme") as Theme;
     if (stored === "light" || stored === "dark") {
       return stored;
     }
-    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
   } catch {
     // localStorage access might fail
   }
-  return "light";
+  return "dark";
 }
 
 function applyTheme(theme: Theme) {
@@ -36,7 +33,7 @@ function applyTheme(theme: Theme) {
   }
 }
 
-// Apply theme immediately on script load to prevent flash
+// Apply dark theme immediately on script load to prevent flash
 if (typeof window !== "undefined") {
   const initialTheme = getStoredTheme();
   applyTheme(initialTheme);
@@ -47,7 +44,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     if (typeof window !== "undefined") {
       return getStoredTheme();
     }
-    return "light";
+    return "dark";
   });
 
   useEffect(() => {
