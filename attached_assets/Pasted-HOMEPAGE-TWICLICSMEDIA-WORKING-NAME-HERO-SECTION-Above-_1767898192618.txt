@@ -1,0 +1,319 @@
+HOMEPAGE — TWICLICSMEDIA (WORKING NAME)
+
+HERO SECTION (Above the fold)
+
+Headline Conversion-first Shopify support for ambitious DTC founders
+
+Subhead Fractional Shopify product & CRO partners — high-touch retainers, measurable revenue lifts.
+
+Primary CTA (solid button) Get a Shopify Conversion Audit
+
+Secondary CTA (ghost / text button) See our case studies
+
+Micro-trust line under CTAs (small, muted) Trusted by early-stage DTC brands · Limited retainer slots
+
+UX note: – Calm hero animation (subtle parallax or text reveal) – No loud visuals, focus on typography and spacing – Sticky header CTA = “Get a Shopify Conversion Audit”
+
+PROBLEM / EMPATHY SECTION
+
+Headline You didn’t start your brand to lose money silently.
+
+Body copy Most DTC brands don’t fail because of lack of demand. They fail because of poor conversion, slow stores, messy apps, and no one taking real ownership.
+
+You launch. Traffic comes in. Ads run. But conversions stall — and growth feels harder than it should.
+
+We work with founders who know something is broken, but don’t know where or how to fix it properly.
+
+Microcopy (small text) If your store feels “almost there” — you’re probably right.
+
+PROOF / QUICK WINS STRIP
+
+Stat 1 0.54% → 1.2% conversion rate in 90 days
+
+Stat 2 100% revenue growth in 3 months
+
+Stat 3 High-touch monthly retainers 50–100 hrs / brand
+
+Microcopy below stats Real results from real client stores. No vanity metrics.
+
+PHILOSOPHY / DIFFERENTIATION
+
+Headline We think like owners — not vendors.
+
+Body copy Most Shopify agencies sell tasks. We take responsibility.
+
+That means:
+
+We care about outcomes, not just deliverables
+
+We think long-term, not “project-to-project”
+
+We stay involved after launch
+
+We optimise continuously, not once
+
+We partner with founders who want someone in their corner, owning conversion, performance, and execution.
+
+Sub-CTA (text link) How we work →
+
+SERVICES (OUTCOME-LED, NOT A LIST)
+
+Headline What we help you improve
+
+Service blocks
+
+Conversion Rate Optimization (CRO) We identify leaks, test hypotheses, and optimise product, cart, and checkout flows to increase revenue from existing traffic.
+
+Store Revamps (with purpose) Design and UX improvements driven by conversion data — not aesthetics alone.
+
+App Integration & Cleanup We audit, remove overlap, integrate correctly, and ensure apps actually improve performance.
+
+Speed & Performance Optimization LCP, CLS, load time fixes that directly impact conversion and ad efficiency.
+
+Microcopy under services Most brands start with an audit. Retainers follow.
+
+CTA Start with a conversion audit
+
+HOW IT WORKS (PROCESS)
+
+Headline A simple, owner-level process
+
+Step 1 — Audit We deeply review your store, data, speed, UX, and conversion flow.
+
+Step 2 — Prioritise We identify what will move revenue first — not what looks nice.
+
+Step 3 — Execute & Test We implement changes, run CRO experiments, and optimise continuously.
+
+Step 4 — Scale What works gets doubled down. What doesn’t gets removed.
+
+Microcopy This is how retainers outperform one-time projects.
+
+CASE STUDIES (DEEP, NOT MANY)
+
+Headline Proven results, not promises
+
+Case Study Card 1 Doubling revenue in 3 months Conversion improved from 0.54% → 1.2% Store revamp + CRO + speed optimisation
+
+CTA: View case study →
+
+Case Study Card 2 From messy launch to conversion-ready store New Shopify build with performance-first UX
+
+CTA: View case study →
+
+Microcopy Screenshots, metrics, and before/after breakdowns included.
+
+RETAINER POSITIONING (CORE CONVERSION SECTION)
+
+Headline Built for long-term growth, not short-term fixes
+
+Body copy Our best work happens inside monthly retainers.
+
+That’s where we:
+
+Take real ownership
+
+Move fast without tickets
+
+Continuously optimise conversion
+
+Become your fractional Shopify product team
+
+We intentionally limit the number of brands we work with at any time.
+
+Bold line (important) We work with a maximum of 10 active brands at once.
+
+Primary CTA Reserve a retainer slot
+
+Secondary CTA Get a Shopify Conversion Audit
+
+Microcopy Retainers typically follow a paid audit.
+
+IDEAL CLIENT SECTION (QUALIFICATION)
+
+Headline Who we’re a good fit for
+
+Bullet list
+
+Early-stage or recently launched DTC brands
+
+Founders directly involved in the business
+
+Stores struggling with conversion or execution
+
+Brands looking for long-term partners, not freelancers
+
+Small disclaimer (muted) We may not be the right fit if you’re only looking for one-off tasks.
+
+LEARNING / INSIGHTS
+
+Headline Learn how high-converting Shopify stores are built
+
+Intro copy We share the same frameworks and thinking we use with our clients — openly.
+
+Featured articles
+
+Why your Shopify conversion rate is low (and how to fix it)
+
+Which Shopify apps actually improve conversion
+
+Speed optimisation checklist for DTC founders
+
+CRO experiments that consistently increase revenue
+
+CTA Explore the learning hub →
+
+FINAL CTA (CALM, CONFIDENT CLOSE)
+
+Headline Ready to improve your store’s conversion?
+
+Body copy Start with a conversion audit. We’ll tell you exactly what’s broken — and what to fix first.
+
+Primary CTA Get a Shopify Conversion Audit
+
+Secondary CTA Tell us about your store
+
+Microcopy Limited audit slots available each month.
+
+FOOTER MICROCOPY
+
+Short philosophy line Building high-converting Shopify stores through ownership, clarity, and long-term partnership.
+
+Links:
+
+Case Studies
+
+Services
+
+Learning
+
+Audit
+
+Privacy / Terms
+
+Brand System (Foundation)
+
+Brand personality (locked)
+
+Bold
+
+Minimal
+
+Calm
+
+Premium
+
+Conversion-first
+
+No playful colors. No loud gradients. No “agency orange”.
+
+This is Notion × Linear × calm CRO studio energy.
+
+Brand Colors (Primary, Secondary, Accents)
+
+🎨 Primary Palette (Core)
+
+Primary Black (Base)
+
+Hex: #0B0D10
+
+Use: Background (dark mode), headers, hero sections
+
+Feeling: Authority, calm, premium
+
+Soft White
+
+Hex: #F7F8FA
+
+Use: Background (light mode), content areas
+
+Feeling: Clean, breathable, editorial
+
+🎨 Secondary Neutrals (Structure)
+
+Slate Gray
+
+Hex: #2A2F36
+
+Use: Section backgrounds, cards, dividers
+
+Muted Gray
+
+Hex: #9AA0A6
+
+Use: Microcopy, captions, metadata
+
+🎯 Accent Color (ONLY ONE)
+
+Conversion Green
+
+Hex: #3EE98A
+
+Use:
+
+Primary CTAs
+
+Active states
+
+Hover highlights
+
+Key metrics (conversion ↑)
+
+This color subconsciously maps to:
+
+Growth
+
+Success
+
+“This worked”
+
+⚠️ Rule: Accent color should appear <8% of the page. Scarcity = premium feel.
+
+Optional Secondary Accent (Very Rare)
+
+Electric Blue
+
+Hex: #6EA8FF
+
+Use only for:
+
+Links
+
+Focus states
+
+Charts
+
+Typography System (Very Important)
+
+Primary Font (Headlines)
+
+Inter (or Neue Montreal if licensed)
+
+Weight: 500–700
+
+Tracking: Slightly tight
+
+Case: Sentence case (not ALL CAPS)
+
+Used for:
+
+Hero headlines
+
+Section titles
+
+CTAs
+
+Secondary Font (Body)
+
+Inter
+
+Weight: 400–500
+
+Line-height: 1.6–1.75
+
+Used for:
+
+Paragraphs
+
+Blog content
+
+Case studies

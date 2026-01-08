@@ -1,0 +1,417 @@
+I have goven all the pages thata woudl be in thsi website below
+
+1️⃣ SERVICES PAGE
+
+URL
+
+/services
+
+Page goal
+
+Turn interest → audit request Explain what you own, not just what you do
+
+Hero
+
+Headline Shopify services built around conversion and ownership
+
+Subhead We don’t sell tasks. We take responsibility for improving your store’s performance over time.
+
+CTA Get a Shopify Conversion Audit
+
+Services Section (Outcome-led)
+
+Conversion Rate Optimization (Core)
+
+What we do We analyse user behaviour, funnels, and friction points — then test and optimise what actually moves revenue.
+
+Includes
+
+Funnel & UX audits
+
+Product page optimisation
+
+Cart & checkout improvements
+
+A/B testing & experiments
+
+Conversion tracking setup
+
+Outcome Higher revenue from the same traffic.
+
+Shopify Store Revamps
+
+What we do Redesigns driven by clarity, speed, and conversion — not trends.
+
+Includes
+
+UX & IA restructuring
+
+Homepage & PDP redesign
+
+Checkout optimisation
+
+Mobile-first improvements
+
+Outcome A store that feels trustworthy, fast, and conversion-ready.
+
+App Integration & Cleanup
+
+What we do We audit, remove bloat, and integrate only what your store actually needs.
+
+Includes
+
+App audits & replacements
+
+Proper configuration
+
+Custom app workflows
+
+Performance checks
+
+Outcome Faster store, fewer conflicts, cleaner logic.
+
+Speed & Performance Optimisation
+
+What we do We improve metrics that impact conversion and ads.
+
+Includes
+
+LCP / CLS fixes
+
+Image & script optimisation
+
+Theme performance tuning
+
+Outcome Faster load times, better UX, higher conversion.
+
+How Services Are Delivered
+
+Headline Most work happens inside retainers
+
+Body copy While we offer one-time projects, our best results come from long-term retainers where we can continuously optimise and take ownership.
+
+CTA See how retainers work →
+
+2️⃣ RETAINERS PAGE (NO PRICES SHOWN)
+
+URL
+
+/retainers
+
+Page goal
+
+Sell peace of mind + ownership
+
+Hero
+
+Headline High-touch Shopify retainers for serious founders
+
+Subhead We act as your fractional Shopify product & CRO team — focused on long-term growth.
+
+CTA Reserve a retainer slot
+
+Why Retainers Work
+
+Headline Why monthly retainers outperform one-time projects
+
+Points
+
+Continuous optimisation beats one-off fixes
+
+Faster execution without tickets
+
+Better prioritisation over time
+
+Shared context → better decisions
+
+Retainer Structure (No pricing)
+
+Starter Retainer
+
+For newly launched or early-stage brands
+
+Ongoing Shopify support
+
+Monthly CRO improvements
+
+Speed & UX fixes
+
+Priority support
+
+Growth Retainer (Most popular)
+
+For scaling brands with traffic but low conversion
+
+Dedicated monthly hours
+
+CRO roadmap & experiments
+
+App optimisation
+
+Monthly performance review
+
+Fractional Shopify Product Team
+
+For brands that want ownership, not vendors
+
+Deep store ownership
+
+Strategic roadmap
+
+Weekly strategy calls
+
+Execution across CRO, UX, apps, speed
+
+Capacity Limitation
+
+Bold statement We work with a maximum of 10 active brands at a time to maintain quality.
+
+CTA Check availability →
+
+3️⃣ CASE STUDIES
+
+Index Page
+
+URL
+
+/case-studies
+
+Hero
+
+Headline Real Shopify results, explained clearly
+
+Subhead Before/after breakdowns, metrics, and decisions — not just screenshots.
+
+Case Study Cards
+
+Each card shows:
+
+Client name
+
+One primary metric
+
+Short description
+
+CTA: View case study →
+
+Case Study Detail Page
+
+URL
+
+/case-studies/[slug]
+
+Structure
+
+Hero Client name + primary metric Example: Conversion increased from 0.54% → 1.2% in 90 days
+
+The Problem What wasn’t working and why
+
+Our Approach Audit → prioritisation → execution → testing
+
+What We Changed Bullet list with screenshots
+
+Results
+
+Conversion rate
+
+Revenue impact
+
+Speed improvements
+
+Founder Quote Short, credible, outcome-focused
+
+CTA Get a Shopify Conversion Audit
+
+4️⃣ LEARNING / BLOG
+
+Index Page
+
+URL
+
+/learning
+
+Hero
+
+Headline Learn how high-converting Shopify stores are built
+
+Subhead Frameworks, CRO insights, and practical advice we use with our clients.
+
+Categories
+
+Conversion
+
+Speed & performance
+
+Shopify apps
+
+UX & design
+
+Blog Card Layout
+
+Title
+
+1-line summary
+
+Read time
+
+CTA: Read →
+
+Article Page Template
+
+Structure
+
+Title
+
+Intro Clear promise of what the founder will learn
+
+Main Content
+
+Clear sections
+
+Short paragraphs
+
+Bullet points
+
+Visual breaks
+
+Practical Checklist Actionable steps founders can apply
+
+CTA Block (End) Want us to review your store? → Get a Shopify Conversion Audit
+
+5️⃣ CONVERSION AUDIT PAGE
+
+URL
+
+/audit
+
+Hero
+
+Headline Get a Shopify Conversion Audit
+
+Subhead We’ll review your store and tell you exactly what’s hurting conversion — and what to fix first.
+
+What You Get
+
+UX & funnel review
+
+Speed & performance check
+
+App audit
+
+CRO opportunities
+
+Prioritised action list
+
+Who It’s For
+
+New or recently launched DTC brands
+
+Founders struggling with conversion
+
+Stores with traffic but low sales
+
+Audit Form
+
+(You already have the fields — reuse)
+
+After Submission
+
+Microcopy If your store is a good fit, we’ll recommend next steps — often a retainer.
+
+6️⃣ ABOUT / PHILOSOPHY PAGE
+
+URL
+
+/about
+
+Hero
+
+Headline Built around ownership, not deliverables
+
+Philosophy Section
+
+We believe:
+
+Conversion matters more than aesthetics
+
+Long-term thinking beats quick wins
+
+Founders deserve partners, not vendors
+
+How Twoclicks Works
+
+Small, focused team
+
+Limited clients
+
+High context
+
+Outcome-driven decisions
+
+Founder Visibility
+
+Brand-first. Optional philosophical note — no big portraits needed.
+
+7️⃣ CONTACT / TELL US ABOUT YOUR STORE
+
+URL
+
+/contact
+
+Hero
+
+Headline Tell us about your store
+
+Subhead If it’s a good fit, we’ll tell you honestly.
+
+Contact Form
+
+Same as audit form but lighter:
+
+Store URL
+
+What are you stuck on?
+
+Email / WhatsApp
+
+Microcopy
+
+We reply within 24–48 hours.
+
+8️⃣ GLOBAL NAVIGATION & FOOTER
+
+Header Nav
+
+Services
+
+Case Studies
+
+Learning
+
+Retainers
+
+Audit (primary CTA button)
+
+Footer
+
+Short philosophy line
+
+Links
+
+Newsletter signup (optional)
+
+FINAL NOTE (Important)
+
+This structure ensures:
+
+Homepage tells the story
+
+Services build trust
+
+Retainers sell the model
+
+Audit converts leads
+
+Learning builds inbound
+
+Case studies prove outcomes
