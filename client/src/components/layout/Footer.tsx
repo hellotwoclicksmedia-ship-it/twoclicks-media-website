@@ -30,7 +30,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-muted-foreground text-sm max-w-md leading-relaxed" data-testid="text-footer-philosophy">
-              Building high-converting Shopify stores through ownership, clarity, and long-term partnership.
+              Stop guessing. Start scaling. Data-backed Shopify CRO for DTC brands.
             </p>
           </div>
 

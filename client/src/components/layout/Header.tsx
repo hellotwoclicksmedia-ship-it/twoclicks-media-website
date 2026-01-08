@@ -79,7 +79,7 @@ export function Header() {
 
             <Link href="/audit" className="hidden sm:block" data-testid="link-header-audit">
               <Button data-testid="button-audit-cta">
-                Get a Shopify Conversion Audit
+                Book Free Audit
               </Button>
             </Link>
 
