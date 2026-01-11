@@ -3,7 +3,7 @@ import { Link } from "wouter";
 const footerLinks = {
   main: [
     { href: "/services", label: "Services" },
-    { href: "/case-studies", label: "Case Studies" },
+    // { href: "/case-studies", label: "Case Studies" },
     { href: "/learning", label: "Learning" },
     { href: "/retainers", label: "Retainers" },
     { href: "/audit", label: "Audit" },

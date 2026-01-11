@@ -26,7 +26,7 @@ export default function Home() {
       <PhilosophySection />
       <ServicesSection />
       <ProcessSection />
-      <CaseStudiesSection />
+      {/* <CaseStudiesSection /> */}
       <RetainerSection />
       <IdealClientSection />
       <LearningSection />
