@@ -1,13 +1,38 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { SiShopify } from "react-icons/si";
+
+const KlaviyoIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <path d="M12 2L2 12l10 10 10-10L12 2zm0 3.5L18.5 12 12 18.5 5.5 12 12 5.5z"/>
+  </svg>
+);
+
+const GorgiasIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+  </svg>
+);
+
+const RechargeIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/>
+  </svg>
+);
+
+const YotpoIcon = ({ className }: { className?: string }) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+  </svg>
+);
 
 const partnerLogos = [
-  { name: "Shopify", abbr: "SH" },
-  { name: "Klaviyo", abbr: "KL" },
-  { name: "Gorgias", abbr: "GR" },
-  { name: "Recharge", abbr: "RC" },
-  { name: "Yotpo", abbr: "YP" },
+  { name: "Shopify", icon: SiShopify },
+  { name: "Klaviyo", icon: KlaviyoIcon },
+  { name: "Gorgias", icon: GorgiasIcon },
+  { name: "Recharge", icon: RechargeIcon },
+  { name: "Yotpo", icon: YotpoIcon },
 ];
 
 export function HeroSection() {
@@ -84,8 +109,8 @@ export function HeroSection() {
                 className="flex items-center gap-2 text-muted-foreground/60"
                 data-testid={`logo-${logo.name.toLowerCase()}`}
               >
-                <div className="w-8 h-8 rounded-md bg-muted flex items-center justify-center text-xs font-semibold">
-                  {logo.abbr}
+                <div className="w-8 h-8 rounded-md bg-muted flex items-center justify-center">
+                  <logo.icon className="w-5 h-5" />
                 </div>
                 <span className="text-sm font-medium">{logo.name}</span>
               </div>
