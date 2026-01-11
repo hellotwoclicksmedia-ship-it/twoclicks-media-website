@@ -24,8 +24,8 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/services" component={Services} />
       <Route path="/retainers" component={Retainers} />
-      <Route path="/case-studies" component={CaseStudies} />
-      <Route path="/case-studies/:slug" component={CaseStudyDetail} />
+      {/* <Route path="/case-studies" component={CaseStudies} />
+      <Route path="/case-studies/:slug" component={CaseStudyDetail} /> */}
       <Route path="/learning" component={Learning} />
       <Route path="/learning/:slug" component={ArticleDetail} />
       <Route path="/audit" component={Audit} />

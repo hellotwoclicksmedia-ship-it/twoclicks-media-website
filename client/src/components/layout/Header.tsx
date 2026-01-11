@@ -6,7 +6,7 @@ import { useTheme } from "@/lib/theme";
 
 const navLinks = [
   { href: "/services", label: "Services" },
-  { href: "/case-studies", label: "Case Studies" },
+  // { href: "/case-studies", label: "Case Studies" },
   { href: "/learning", label: "Learning" },
   { href: "/retainers", label: "Retainers" },
 ];

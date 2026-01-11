@@ -37,12 +37,12 @@ export function CaseStudiesSection() {
                 <p className="text-muted-foreground mb-6" data-testid="text-case-study-description">
                   {caseStudyHighlight.description}
                 </p>
-                <Link href="/case-studies" data-testid="link-case-study-featured">
+{/* <Link href="/case-studies" data-testid="link-case-study-featured">
                   <Button>
                     View Full Case Study
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
-                </Link>
+                </Link> */}
               </div>
 
               <div className="grid grid-cols-3 gap-4">
