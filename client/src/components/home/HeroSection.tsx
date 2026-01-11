@@ -53,16 +53,6 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
-            <Link href="/case-studies">
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="w-full sm:w-auto text-base"
-                data-testid="button-hero-secondary"
-              >
-                View Case Studies
-              </Button>
-            </Link>
           </div>
 
           <p 
