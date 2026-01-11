@@ -53,6 +53,16 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>
+            <a href="https://calendly.com/hello-twoclicksmedia/30min" target="_blank" rel="noopener noreferrer">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="w-full sm:w-auto text-base"
+                data-testid="button-hero-call"
+              >
+                Book a Call
+              </Button>
+            </a>
           </div>
 
           <p 
