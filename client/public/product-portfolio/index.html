@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Two Clicks Media — Product Portfolio</title>
-<meta name="description" content="Two Clicks Media — a design-led product studio. Apps, Shopify & e-commerce storefronts, and end-to-end products." />
+<meta name="description" content="Two Clicks Media — a design-led product studio building apps, Shopify & e-commerce storefronts, and end-to-end products." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Instrument+Serif:ital@0;1&display=swap" />
@@ -14,13 +14,16 @@
     --serif: 'Instrument Serif', Georgia, serif;
 
     --bg: #0B0B0D;
+    --surface-d: #15151B;
     --card: #FFFFFF;
     --paper: #FBF9F4;
     --on-dark: #F4F2EE;
     --on-dark-soft: #A6A3AE;
     --on-dark-faint: #6E6B77;
     --hair: rgba(255,255,255,.10);
+    --hair-2: rgba(255,255,255,.16);
     --brand: #2BD46E;
+    --brand-ink: #1E9E53;
 
     --ink: #1C1815;
     --ink-soft: #423B34;
@@ -57,7 +60,7 @@
   }
 
   /* ---------- Hero ---------- */
-  .hero { padding: clamp(52px, 8vw, 104px) 0 clamp(36px, 5vw, 60px); }
+  .hero { padding: clamp(52px, 8vw, 104px) 0 clamp(40px, 6vw, 64px); }
   .eyebrow {
     display: inline-flex; align-items: center; gap: 10px;
     font-size: 12.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--on-dark-soft);
@@ -69,27 +72,25 @@
     font-size: clamp(38px, 6.2vw, 80px); color: var(--on-dark); margin: 0 0 28px; max-width: 16ch;
   }
   .hero h1 em { font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--brand); }
-  .hero__lead { font-size: clamp(17px, 1.7vw, 21px); line-height: 1.6; color: var(--on-dark-soft); max-width: 60ch; margin: 0; }
+  .hero__lead { font-size: clamp(17px, 1.7vw, 21px); line-height: 1.6; color: var(--on-dark-soft); max-width: 58ch; margin: 0; }
   .hero__lead b { color: var(--on-dark); font-weight: 600; }
 
   .caps { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
   .cap { font-size: 13.5px; color: var(--on-dark-soft); border: 1px solid var(--hair); border-radius: 999px; padding: 9px 16px; }
   .cap b { color: var(--on-dark); font-weight: 600; }
 
-  /* ---------- Products section ---------- */
+  /* ---------- Section head ---------- */
   .sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
-    padding-top: 18px; border-top: 1px solid var(--hair); margin-bottom: 26px; }
+    padding-top: 20px; border-top: 1px solid var(--hair); margin-bottom: 26px; }
   .sec-head h2 { font-size: 15px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--on-dark); margin: 0; }
   .sec-head .count { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--on-dark-faint); }
 
-  /* ---------- Product card ---------- */
+  /* ---------- Featured product ---------- */
   .product {
     display: grid; grid-template-columns: 1.05fr 1fr;
     background: var(--card); border-radius: var(--r-lg); overflow: hidden;
     box-shadow: 0 1px 0 rgba(255,255,255,.04), 0 40px 80px -40px rgba(0,0,0,.7);
   }
-
-  /* live preview tile */
   .tile { position: relative; background: var(--paper); border-right: 1px solid var(--line); display: flex; flex-direction: column; text-decoration: none; }
   .tile__bar { display: flex; align-items: center; gap: 10px; height: 46px; padding: 0 16px; border-bottom: 1px solid var(--line); background: #fff; }
   .tile__dots { display: flex; gap: 6px; }
@@ -97,16 +98,39 @@
   .tile__bar b { font-size: 12.5px; color: var(--muted); font-weight: 600; }
   .tile__bar .live { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--indigo-ink); }
   .tile__bar .live i { width: 7px; height: 7px; border-radius: 50%; background: #2FA86A; box-shadow: 0 0 0 3px rgba(47,168,106,.18); }
-
-  .tile__view { position: relative; width: 100%; aspect-ratio: 1100 / 760; overflow: hidden; background: var(--paper); }
-  .tile__view iframe { position: absolute; top: 0; left: 0; width: 1100px; height: 760px; transform-origin: top left; border: 0; pointer-events: none; background: #fff; }
-  .tile__hint {
-    position: absolute; inset: 0; display: flex; align-items: flex-end; justify-content: center;
-    padding-bottom: 18px; opacity: 0; transition: opacity var(--t);
-    background: linear-gradient(to top, rgba(28,24,21,.42), rgba(28,24,21,0) 42%);
-  }
+  .tile__hint { position: absolute; left: 0; right: 0; bottom: 0; display: flex; justify-content: center;
+    padding: 40px 0 16px; opacity: 0; transition: opacity var(--t);
+    background: linear-gradient(to top, rgba(28,24,21,.4), rgba(28,24,21,0)); }
   .tile:hover .tile__hint { opacity: 1; }
   .tile__hint span { background: #fff; color: var(--ink); font-weight: 600; font-size: 13.5px; padding: 9px 16px; border-radius: 999px; box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+
+  /* generalised app mock */
+  .am { flex: 1; display: flex; min-height: 360px; }
+  .am__sb { width: 96px; background: #fff; border-right: 1px solid var(--line); padding: 16px 11px; display: flex; flex-direction: column; gap: 7px; }
+  .am__logo { width: 34px; height: 34px; border-radius: 10px; background: var(--indigo); margin: 0 auto 12px; }
+  .am__nav { height: 30px; border-radius: 8px; display: flex; align-items: center; gap: 8px; padding: 0 9px; }
+  .am__nav i { width: 15px; height: 15px; border-radius: 4px; background: var(--line); flex-shrink: 0; }
+  .am__nav b { height: 7px; border-radius: 4px; background: var(--line); flex: 1; }
+  .am__nav.on { background: var(--indigo-tint); }
+  .am__nav.on i { background: var(--indigo); }
+  .am__nav.on b { background: #C2BEF4; }
+  .am__main { flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 13px; min-width: 0; }
+  .am__top { display: flex; align-items: center; gap: 10px; }
+  .am__title { height: 13px; width: 118px; border-radius: 5px; background: var(--ink); opacity: .85; }
+  .am__search { margin-left: auto; height: 30px; flex: 0 1 150px; border-radius: 999px; background: #fff; border: 1px solid var(--line); }
+  .am__add { height: 30px; width: 30px; border-radius: 8px; background: var(--indigo); flex-shrink: 0; }
+  .am__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 11px; }
+  .am__card { background: #fff; border: 1px solid var(--line); border-radius: 11px; overflow: hidden; }
+  .am__cover { height: 58px; }
+  .am__c1 { background: linear-gradient(135deg, #6A62EE, #4F46E5); }
+  .am__c2 { background: linear-gradient(135deg, #F3F1FB, #DAD7F7); }
+  .am__c3 { background: linear-gradient(135deg, #2B2A33, #1C1815); }
+  .am__c4 { background: linear-gradient(135deg, #FCEBE1, #F3D9C8); }
+  .am__c5 { background: linear-gradient(135deg, #E4F0EA, #BFE3CF); }
+  .am__c6 { background: linear-gradient(135deg, #4F46E5, #2A2476); }
+  .am__m { padding: 9px 10px; display: flex; flex-direction: column; gap: 6px; }
+  .am__m .l1 { height: 8px; width: 72%; border-radius: 4px; background: var(--ink); opacity: .8; }
+  .am__m .l2 { height: 6px; width: 46%; border-radius: 4px; background: var(--line); }
 
   /* product body */
   .pbody { padding: clamp(28px, 3.2vw, 46px); display: flex; flex-direction: column; }
@@ -120,7 +144,6 @@
   .pbody p { font-size: clamp(15px, 1.35vw, 17px); line-height: 1.6; color: var(--ink-soft); margin: 0 0 22px; }
   .pmeta { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 30px; }
   .pmeta span { font-size: 12.5px; color: var(--ink-soft); background: var(--paper); border: 1px solid var(--line); padding: 7px 12px; border-radius: 999px; }
-
   .btnrow { margin-top: auto; display: flex; flex-wrap: wrap; gap: 12px; }
   .btn { height: 52px; padding: 0 22px; border-radius: 12px; font-weight: 600; font-size: 15.5px;
     display: inline-flex; align-items: center; gap: 10px; text-decoration: none; cursor: pointer; transition: var(--t); }
@@ -132,16 +155,48 @@
   .btn--ghost:hover { border-color: var(--ink); }
   .btn--ghost:hover svg { transform: translateX(4px); }
 
+  /* ---------- UI/UX section ---------- */
+  .uiux { margin-top: clamp(56px, 8vw, 96px); }
+  .grid3 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .work {
+    display: flex; flex-direction: column; background: var(--surface-d); border: 1px solid var(--hair);
+    border-radius: 18px; overflow: hidden; text-decoration: none; color: inherit;
+    transition: transform var(--t), border-color var(--t), box-shadow var(--t);
+  }
+  .work:hover { transform: translateY(-4px); border-color: var(--hair-2); box-shadow: 0 30px 60px -30px rgba(0,0,0,.7); }
+  .work__media { aspect-ratio: 16 / 10; background: #0F0F14; overflow: hidden; border-bottom: 1px solid var(--hair); }
+  .work__media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 360ms cubic-bezier(.4,0,.2,1); }
+  .work:hover .work__media img { transform: scale(1.04); }
+  .work__ph { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
+  .work__ph svg { width: 40px; height: 40px; color: #fff; opacity: .92; }
+  .work__ph b { font-weight: 700; font-size: 22px; color: #fff; letter-spacing: -.01em; }
+  .work__body { padding: 20px 20px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .work__tags { display: flex; flex-wrap: wrap; gap: 7px; }
+  .work__tags span { font-size: 11px; color: var(--on-dark-soft); border: 1px solid var(--hair); border-radius: 999px; padding: 4px 10px; }
+  .work__tags .accent { color: #BFE3CF; border-color: rgba(43,212,110,.3); background: rgba(43,212,110,.08); }
+  .work__title { font-size: 18px; font-weight: 700; color: var(--on-dark); letter-spacing: -.01em; }
+  .work__desc { font-size: 14px; line-height: 1.5; color: var(--on-dark-soft); flex: 1; }
+  .work__link { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 600; color: var(--brand); margin-top: 2px; }
+  .work__link svg { width: 15px; height: 15px; transition: transform var(--t); }
+  .work:hover .work__link svg { transform: translate(2px, -2px); }
+
   /* ---------- Footer ---------- */
-  footer { border-top: 1px solid var(--hair); margin-top: clamp(52px, 7vw, 92px); padding: 30px 0 44px;
+  footer { border-top: 1px solid var(--hair); margin-top: clamp(56px, 7vw, 92px); padding: 30px 0 44px;
     display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   footer .made { display: inline-flex; align-items: center; gap: 9px; font-size: 14.5px; color: var(--on-dark-soft); }
   footer .made .word { font-size: 15px; }
   footer .yr { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--on-dark-faint); }
 
   @media (max-width: 820px) {
+    .grid3 { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 860px) {
     .product { grid-template-columns: 1fr; }
     .tile { border-right: none; border-bottom: 1px solid var(--line); }
+  }
+  @media (max-width: 520px) {
+    .grid3 { grid-template-columns: 1fr; }
+    .am__grid { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
 </head>
@@ -150,11 +205,11 @@
 
     <header class="topbar">
       <div class="word">TwoClicks<span class="g">.</span></div>
-      <div class="topbar__tag">Product Portfolio</div>
+      <div class="topbar__tag">Portfolio</div>
     </header>
 
     <section class="hero">
-      <div class="eyebrow"><span class="dot"></span> Two Clicks Media · Vol. 01</div>
+      <div class="eyebrow"><span class="dot"></span> Two Clicks Media · Studio</div>
       <h1>We design and <em>build</em> the products behind good businesses.</h1>
       <p class="hero__lead">Two Clicks Media is a design-led product &amp; engineering studio. We build <b>apps</b>, <b>Shopify &amp; e-commerce storefronts</b>, and end-to-end products — design first, shipped fast.</p>
       <div class="caps">
@@ -165,21 +220,43 @@
       </div>
     </section>
 
+    <!-- Featured product -->
     <section>
       <div class="sec-head">
         <h2>Products</h2>
-        <span class="count">01 — featured</span>
+        <span class="count">Built &amp; shipped</span>
       </div>
 
       <div class="product">
         <a class="tile" href="ui_kits/my-library/index.html" aria-label="Open the live My Library product">
           <div class="tile__bar">
             <span class="tile__dots"><i></i><i></i><i></i></span>
-            <b>My Library — built on Accessible Foundations</b>
-            <span class="live"><i></i> Live product</span>
+            <b>My Library — a product built on our design system</b>
+            <span class="live"><i></i> Live</span>
           </div>
-          <div class="tile__view" data-fit>
-            <iframe src="ui_kits/my-library/index.html" title="My Library — live product preview" scrolling="no" tabindex="-1"></iframe>
+          <div class="am">
+            <div class="am__sb">
+              <div class="am__logo"></div>
+              <div class="am__nav on"><i></i><b></b></div>
+              <div class="am__nav"><i></i><b></b></div>
+              <div class="am__nav"><i></i><b></b></div>
+              <div class="am__nav"><i></i><b></b></div>
+            </div>
+            <div class="am__main">
+              <div class="am__top">
+                <div class="am__title"></div>
+                <div class="am__search"></div>
+                <div class="am__add"></div>
+              </div>
+              <div class="am__grid">
+                <div class="am__card"><div class="am__cover am__c1"></div><div class="am__m"><div class="l1"></div><div class="l2"></div></div></div>
+                <div class="am__card"><div class="am__cover am__c2"></div><div class="am__m"><div class="l1"></div><div class="l2"></div></div></div>
+                <div class="am__card"><div class="am__cover am__c3"></div><div class="am__m"><div class="l1"></div><div class="l2"></div></div></div>
+                <div class="am__card"><div class="am__cover am__c4"></div><div class="am__m"><div class="l1"></div><div class="l2"></div></div></div>
+                <div class="am__card"><div class="am__cover am__c5"></div><div class="am__m"><div class="l1"></div><div class="l2"></div></div></div>
+                <div class="am__card"><div class="am__cover am__c6"></div><div class="am__m"><div class="l1"></div><div class="l2"></div></div></div>
+              </div>
+            </div>
           </div>
           <div class="tile__hint"><span>Open the live product ↗</span></div>
         </a>
@@ -187,12 +264,12 @@
         <div class="pbody">
           <span class="pbadge"><i></i> Design System · Live Product</span>
           <h3>Accessible Foundations</h3>
-          <p>A token-driven UI system for products serving older, non-technical users — one interactive color, 44px touch targets, AAA contrast, and a full token + component + docs layer. The preview is <b>My Library</b>, a real product built entirely from the system.</p>
+          <p>A token-driven UI system for products serving older, non-technical users — one interactive color, 44px touch targets, AAA contrast, and a full token + component + docs layer. <b>My Library</b> is a real product built end-to-end on top of it.</p>
           <div class="pmeta">
             <span>23 components</span>
             <span>AA → AAA contrast</span>
             <span>1 interactive color</span>
-            <span>Live, runnable</span>
+            <span>Live &amp; runnable</span>
           </div>
           <div class="btnrow">
             <a class="btn btn--primary" href="ui_kits/my-library/index.html">Open the live product
@@ -206,26 +283,61 @@
       </div>
     </section>
 
+    <!-- UI/UX work -->
+    <section class="uiux">
+      <div class="sec-head">
+        <h2>UI / UX</h2>
+        <span class="count">Selected work · Behance</span>
+      </div>
+
+      <div class="grid3">
+        <a class="work" href="https://www.behance.net/gallery/233657339/Bento-Wireframing-Mini-Kit" target="_blank" rel="noopener">
+          <div class="work__media"><img src="assets/mini-kit.png" alt="Bento Wireframing Mini Kit" loading="lazy" /></div>
+          <div class="work__body">
+            <div class="work__tags"><span class="accent">UI Kit</span><span>Wireframes</span></div>
+            <div class="work__title">Bento Wireframing Mini Kit</div>
+            <div class="work__desc">A compact, modular kit of bento blocks for sketching structured layouts, fast.</div>
+            <span class="work__link">View on Behance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+        </a>
+
+        <a class="work" href="https://www.behance.net/gallery/234598321/Good-Grammar-AI-A-Dashboard-for-Smarter-Communication" target="_blank" rel="noopener">
+          <div class="work__media"><img src="assets/good-grammar.png" alt="Good Grammar AI dashboard" loading="lazy" /></div>
+          <div class="work__body">
+            <div class="work__tags"><span class="accent">Product</span><span>Dashboard</span></div>
+            <div class="work__title">Good Grammar AI</div>
+            <div class="work__desc">An AI writing assistant reframed as a calm, glanceable daily dashboard.</div>
+            <span class="work__link">View on Behance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+        </a>
+
+        <a class="work" href="https://www.behance.net/gallery/222268639/Health-Wellness-Website-Design" target="_blank" rel="noopener">
+          <div class="work__media"><img src="assets/supplement.png" alt="The Supplement product page" loading="lazy" /></div>
+          <div class="work__body">
+            <div class="work__tags"><span class="accent">Web</span><span>E-commerce</span></div>
+            <div class="work__title">The Supplement</div>
+            <div class="work__desc">A warm, trustworthy wellness product page with a confident path to cart.</div>
+            <span class="work__link">View on Behance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+        </a>
+
+        <a class="work" href="https://www.behance.net/gallery/172514071/Yatra-Flight-Booking-Page-Re-design" target="_blank" rel="noopener">
+          <div class="work__media"><img src="assets/yatra.png" alt="Yatra flight booking screen redesign" loading="lazy" /></div>
+          <div class="work__body">
+            <div class="work__tags"><span class="accent">Web</span><span>Travel</span></div>
+            <div class="work__title">Yatra — Flight Booking Re-design</div>
+            <div class="work__desc">A cleaner, faster flight-booking flow — search, results and selection rebuilt for confident booking.</div>
+            <span class="work__link">View on Behance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
     <footer>
       <span class="made">Created by <span class="word">TwoClicks<span class="g">.</span></span> Two Clicks Media</span>
-      <span class="yr">© 2026 · Two Clicks Media</span>
+      <span class="yr">© 2026</span>
     </footer>
 
   </div>
-
-  <script>
-    (function () {
-      function fit() {
-        document.querySelectorAll('[data-fit]').forEach(function (v) {
-          var f = v.querySelector('iframe');
-          if (!f) return;
-          f.style.transform = 'scale(' + (v.clientWidth / 1100) + ')';
-        });
-      }
-      window.addEventListener('resize', fit);
-      window.addEventListener('load', fit);
-      fit();
-    })();
-  </script>
 </body>
 </html>
