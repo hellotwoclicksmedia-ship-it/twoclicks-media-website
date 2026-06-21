@@ -63,6 +63,14 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                {/* Static page served outside the SPA router — use a real anchor for a full navigation */}
+                <a href="/product-portfolio" data-testid="link-footer-product-portfolio">
+                  <span className="text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer">
+                    Product Portfolio
+                  </span>
+                </a>
+              </li>
             </ul>
             <ul className="space-y-3 mt-6 pt-6 border-t border-border">
               {footerLinks.legal.map((link) => (
