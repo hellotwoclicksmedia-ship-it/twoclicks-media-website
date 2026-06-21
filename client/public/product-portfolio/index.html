@@ -52,13 +52,22 @@
 
   /* featured product */
   .feature{padding:clamp(20px,3vw,40px) 0 clamp(40px,6vw,80px)}
-  .frame{max-width:980px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow-lift)}
+  .feature__stage{position:relative;max-width:980px;margin:0 auto}
+  .feature__stage::before{content:"";position:absolute;inset:-12% -8% -8%;background:radial-gradient(56% 52% at 50% 42%,rgba(18,185,129,.20),transparent 72%);z-index:0;pointer-events:none}
+  .frame{position:relative;z-index:1;display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow-lift);transition:transform var(--t),box-shadow var(--t)}
+  .frame:hover,.frame:focus-visible{transform:translateY(-6px);box-shadow:0 8px 18px rgba(20,18,15,.08),0 56px 100px -40px rgba(20,18,15,.34)}
   .frame__bar{display:flex;align-items:center;gap:8px;height:48px;padding:0 18px;border-bottom:1px solid var(--line)}
   .frame__bar i{width:11px;height:11px;border-radius:50%;background:var(--line)}
   .frame__bar b{margin-left:12px;font-size:13px;font-weight:400;color:var(--faint)}
   .frame__bar .live{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:500;color:var(--accent-ink)}
   .frame__bar .live i{width:7px;height:7px;background:var(--accent)}
+  .frame__shot{position:relative;line-height:0}
   .frame__img{display:block;width:100%;height:auto;background:#fff}
+  .frame__overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(to top,rgba(10,16,13,.46),rgba(10,16,13,.10));opacity:0;transition:opacity var(--t)}
+  .frame:hover .frame__overlay,.frame:focus-visible .frame__overlay{opacity:1}
+  .frame__open{display:inline-flex;align-items:center;gap:9px;height:54px;padding:0 28px;background:var(--accent);color:#fff;font-size:16px;font-weight:500;border-radius:var(--pill);box-shadow:0 12px 34px rgba(12,140,96,.45);transform:translateY(12px);transition:transform var(--t)}
+  .frame:hover .frame__open,.frame:focus-visible .frame__open{transform:none}
+  .frame__open svg{width:18px;height:18px}
   .feature__meta{max-width:980px;margin:26px auto 0;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
   .feature__meta h2{font-size:clamp(24px,3vw,34px);font-weight:500;letter-spacing:-.03em}
   .feature__meta p{font-size:16px;color:var(--soft);max-width:46ch;margin-top:8px;line-height:1.55}
@@ -144,9 +153,16 @@
     </section>
 
     <section class="feature">
-      <div class="frame">
-        <div class="frame__bar"><i></i><i></i><i></i><b>My Library — built on Accessible Foundations</b><span class="live"><i></i> Live</span></div>
-        <img class="frame__img" src="assets/my-library.png" alt="My Library — a live product built on the Accessible Foundations design system" />
+      <div class="feature__stage">
+        <a class="frame" href="ui_kits/my-library/index.html" aria-label="Open the live My Library product">
+          <div class="frame__bar"><i></i><i></i><i></i><b>My Library — built on Accessible Foundations</b><span class="live"><i></i> Live</span></div>
+          <div class="frame__shot">
+            <img class="frame__img" src="assets/my-library.png" alt="My Library — a live product built on the Accessible Foundations design system" />
+            <div class="frame__overlay"><span class="frame__open">Open the live product
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+            </span></div>
+          </div>
+        </a>
       </div>
       <div class="feature__meta reveal">
         <div>
